@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Tracking System</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚌 Live Bus Tracker</h1>
+
+        <div class="info-box">
+            <p><strong>Bus Name:</strong> College Bus 1</p>
+            <p><strong>Status:</strong> <span id="status">Running</span></p>
+            <button onclick="startBus()">Start</button>
+            <button onclick="stopBus()">Stop</button>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script-enhanced.js"></script>
+
+</body>
+</html>
